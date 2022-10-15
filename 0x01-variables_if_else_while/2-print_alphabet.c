@@ -2,11 +2,11 @@
 /**
  * main - entry point
  * Description: write a programme that prints alphabets in lowercase.
- * Return 0;
+ * Return: 0 (Correct)
  */
 int main(void)
 {
-	char ch = 'a';
+	int ch = 'a';
 
 		while (ch <= 'z')
 		{
