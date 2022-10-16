@@ -7,17 +7,12 @@
  */
 int main(void)
 {
-	char c;
-	char d = '0';
+	int i;
+	char hexvalues[] = "0123456789abcdef";
 
-	while (d <= '9')
+	for (i = 0; i < 16; i++)
 
-		putchar(d);
-		d++;
-
-	for (c = 'a'; c <= 'f'; c++)
-
-		putchar(c);
+		putchar(hexvalues[i]);
 
 	putchar('\n');
 	return (0);
