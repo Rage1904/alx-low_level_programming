@@ -13,6 +13,8 @@ int main(void)
 
 		for (j = 1; j <= 2; j++)
 
-			printf("%d %d\n", i, j);
+			putchar(i);
+			putchar(j);
+	putchar('\n');
 	return (0);
 }
