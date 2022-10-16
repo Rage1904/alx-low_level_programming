@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
  * main - entry point
  * Description:  print the last digit of the number stored in the variable n.
@@ -19,7 +20,7 @@ int main(void)
 
 	else if (lt == 0)
 
-		printf("last digit of %d is % is 0\n", n, lt);
+		printf("last digit of %d is %d is 0\n", n, lt);
 
 	else if (lt < 6 && lt != 0)
 
