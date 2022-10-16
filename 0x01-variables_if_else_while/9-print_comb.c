@@ -18,8 +18,8 @@ int main(void)
 		}
 		else
 		{
-			putchar(5);
 			putchar(4);
+			putchar(5);
 		}
 	}
 	putchar('\n');
