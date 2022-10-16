@@ -15,10 +15,10 @@ int main(void)
 		putchar(f);
 		f++;
 
-	for (e ='a'; e <= 'g'; e++)
+	for (e = 'a'; e <= 'g'; e++)
 
 		putchar(e);
 
-	putchar('\n');
-	return (0);
+		putchar('\n');
+		return (0);
 }
