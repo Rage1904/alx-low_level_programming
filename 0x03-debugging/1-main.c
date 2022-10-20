@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - comment the bug
  * Return: 0 (Correct)
