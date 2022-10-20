@@ -1,23 +1,14 @@
 #include "main.h"
 /**
- * main - positive or negative
+ * main - print positive or negative
  * Return: 0 (correct)
  */
 int main(void)
 {
-	int i = 98;
+	int i;
 
-	if (i > 98)
-	{
-		printf("i is POSITIVE");
-	}
-	else if (i < 98)
-	{
-		printf("i is NEGATIVE");
-	}
-	else
-	{
-		printf("i is ZERO");
-	}
+	i = 0;
+	positive_or_negative(i);
+
 	return (0);
 }
