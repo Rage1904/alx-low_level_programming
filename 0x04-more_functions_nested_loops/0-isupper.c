@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 /**
  * _isupper - uppercase letter
  * @c: char to be checked
