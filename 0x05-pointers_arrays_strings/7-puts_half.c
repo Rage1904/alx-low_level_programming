@@ -2,22 +2,21 @@
 #include <stdio.h>
 
 /**
- * puts_half - function that prints half of a string
- * @str: half the string
+ * puts_half - a function that prints half of a string
+ * @str: half a string
  */
 
 void puts_half(char *str)
 {
-	int i = 0, l = 0, n;
+	int a = 0, b = 0, n;
 
-	while (str[i++])
-		l++;
-
-	if ((l % 2) == 0)
-		n = l / 2;
+	while (str[a++])
+		b++;
+	if ((b % 2) == 0)
+		n = b / 2;
 	else
-		n = (l + 1) / 2;
-	for (i = n; i < l; i++)
-		_putchar(str[i]);
+		n = (b + 1) / 2;
+	for (a = n; a < b; a++)
+		_putchar(str[a]);
 	_putchar('\n');
 }
