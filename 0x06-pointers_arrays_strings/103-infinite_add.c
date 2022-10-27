@@ -27,7 +27,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	r[tp + 1] = '\0';
 	a1--, a2--, size_r--;
 	mr1 = *(n1 + a1) - 48, mr2 = *(n2 + a2) - 48;
-	while (tp > 0)
+	while (tp >= 0)
 	{
 		it = mr1 + mr2 + add;
 		if (it > 10)
@@ -39,7 +39,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		else
 			*(r + tp) = '0';
 		if (a1 > 0)
-			a2--, mr2 = *(n1 + a1) - 48;
+			a1--, mr1 = *(n1 + a1) - 48;
 		else
 			mr1 = 0;
 		if (a2 > 0)
