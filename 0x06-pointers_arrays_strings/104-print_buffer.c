@@ -10,7 +10,7 @@
 
 void print_buffer(char *b, int size)
 {
-	int a, d, c;
+	int a, d, e;
 
 	if (size <= 0)
 		printf("\n");
@@ -29,14 +29,14 @@ void print_buffer(char *b, int size)
 					printf(" ");
 			}
 			printf(" ");
-			for (c = d; c < d + 10; c++)
+			for (e = a; e < a + 10; e++)
 			{
-				if (c >= size)
+				if (e >= size)
 					break;
-				if (*(b + c) < 32 || *(b + c) > 126)
+				if (*(b + e) < 32 || *(b + e) > 126)
 					printf("%c", '.');
 				else
-					printf("%c", *(b + c));
+					printf("%c", *(b + e));
 			}
 			printf("\n");
 		}
