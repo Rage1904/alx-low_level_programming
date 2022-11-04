@@ -10,14 +10,11 @@
 
 int main(int argc, char *argv[])
 {
-	printf("file name is: %s\n", argv[0]);
+	int a;
 
-	if (argc < 1)
+	for (a = 0; a < argc; a++)
 	{
-		printf("No argument passed through command line\n");
+		printf("%s\n", argv[a]);
 	}
-	else
-	{
-		printf("first argument is: %s\n", argv[0]);
-	}
+	return (0);
 }
