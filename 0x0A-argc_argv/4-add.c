@@ -1,21 +1,33 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
- * main - program that adds positive numbers
+ * main - a program that adds positive number
  * @argc: count
  * @argv: vector
- * Return: 0
+ * Return: returns 0 (Success)
  */
 
 int main(int argc, char *argv[])
 {
-	if (argc < 0)
-	{
+	int a;
+	int sum = 0;
+	char *ptr = 0;
 
-		printf("error\n");
-		return (1);
+	if (argc == 1)
+	{
+		printf("0\n");
+		return (0);
 	}
-	printf("%d\n", atoi(argv[2]) + atoi(argv[3]));
+	for (a = 1; a < argc; a++)
+	{
+		sum += strtol(argv[a], &ptr, 10);
+		if (*ptr != 0)
+		{
+			printf("Error\n");
+			return (1);
+		}
+	}
+	printf("%d\n", sum);
 	return (0);
 }
