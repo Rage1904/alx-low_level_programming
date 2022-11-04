@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-	if (argc < 0)
+	if (argc != 5)
 	{
 		printf("argument error\n");
 		return (1);
