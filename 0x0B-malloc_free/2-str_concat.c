@@ -35,7 +35,7 @@ char *str_concat(char *s1, char *s2)
 		s[c] = s1[c];
 
 	limit = b;
-	for (b = 0; b <= limit; c++, c++)
+	for (b = 0; b <= limit; c++, b++)
 		s[c] = s2[b];
 
 	return (s);
