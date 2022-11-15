@@ -1,10 +1,12 @@
 #include <stdlib.h>
-#include <stdio.h>
 
-#define PI 3.14
+/**
+ * main - write a program that prints name of a file
+ * Return: 0
 
 int main (void)
 {
-	double areaofcircle = PI * 10 * 10;
-	printf("Area%lf\n" areaofcircle);
+	printf("%s\n", __FILE__);
+
+	return (0);
 }
