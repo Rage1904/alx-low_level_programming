@@ -5,9 +5,10 @@
 * @h: a pointer to a list_t list
 * Return: returns the number of nodes
 */
+
 size_t print_list(const list_t *h)
 {
-	size_t i = 0;
+	size_t a = 0;
 
 	if (h == NULL)
 		return (0);
@@ -19,7 +20,7 @@ size_t print_list(const list_t *h)
 		else
 			printf("[0] (nil)\n");
 		h = h->next;
-		i++;
+		a++;
 	}
-	return (i);
+	return (a);
 }
