@@ -23,7 +23,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		tmp = tmp->next;
 		a++;
 	}
-	if (index >= i)
+	if (index >= a)
 	/* Then */
 	{
 		return (NULL);
